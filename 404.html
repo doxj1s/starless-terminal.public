@@ -177,7 +177,7 @@
     <hr class="divider">
 
     <div class="status">
-      STATUS&nbsp;&nbsp;&nbsp;NO RESPONSE<br>
+      STATUS&nbsp;&nbsp;&nbsp;<span id="random-status">NO RESPONSE</span><br>
       SIGNAL&nbsp;&nbsp;&nbsp;LOST <br>
       ROUTE&nbsp;&nbsp;&nbsp;&nbsp;UNKNOWN
     </div>
@@ -212,7 +212,6 @@
     "RESULT // null",
     "NO HOST",
     "TRANSMISSION FAILED"
-    "
   ];
 
   const titles = [
@@ -220,9 +219,9 @@
     "STARLESS TERMINAL // SIGNAL LOST",
     "STARLESS TERMINAL // TRANSMISSION DETECTED",
     "STARLESS TERMINAL // FIST MY BUMP",
-    "STARLESS TERMINAL // NO CARRIER".
+    "STARLESS TERMINAL // NO CARRIER",
     "STARLESS TERMINAL // SIGNALS INTERLINKED",
-    "STARLESS TERMINAL // UNKNOWN ROUTE",
+    "STARLESS TERMINAL // UNKNOWN ROUTE"
   ];
 
   document.getElementById("random-status").textContent =
