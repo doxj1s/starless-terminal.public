@@ -215,12 +215,25 @@
     "VOID REMAINS UNRESPONSIVE",
     "ROUTE UNKNOWN",
     "TRANSMISSION CONTINUES"
+    "
   ];
 
-  const status = statuses[Math.floor(Math.random() * statuses.length)];
+  const titles = [
+    "STARLESS TERMINAL // AWAITING INPUT",
+    "STARLESS TERMINAL // SIGNAL LOST",
+    "STARLESS TERMINAL // TRANSMISSION DETECTED",
+    "STARLESS TERMINAL // FIST MY BUMP",
+    "STARLESS TERMINAL // NO CARRIER".
+    "STARLESS TERMINAL // SIGNALS INTERLINKED",
+    "STARLESS TERMINAL // UNKNOWN ROUTE",
+  ];
 
-  document.getElementById("random-status").textContent = status;
-  </script>
+  document.getElementById("random-status").textContent =
+    statuses[Math.floor(Math.random() * statuses.length)];
+
+  document.title =
+    titles[Math.floor(Math.random() * titles.length)];
+</script>
   
 </body>
 </html>
