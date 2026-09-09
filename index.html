@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Starless Terminal - // NO SIGNAL </title>
+  <title>Starless Terminal - // </title>
   <meta
     name="description"
     content="Starless Terminal is a personal, non-commercial project. Please no automated outreach, sales solicitaions, recruiting, vendor pitches, and AI-Generated contact are not requested."
@@ -165,40 +165,62 @@
       </div>
 
       <div class="project">
-        <div class="project-name">ASTER</div>
-        <div class="project-description">
-          systems monitor, detection, and alerting
-        </div>
-      </div>
-
-            <div class="project">
-        <div class="project-name">GREY LANTERN</div>
-        <div class="project-description">
-          digital privacy, cleanup, and watchdog, 
-        </div>
-      </div>
-
-      <div class="project">
         <div class="project-name">ANESIDORA</div>
         <div class="project-description">
           data preservation, archive, and independence
         </div>
       </div>
 
+      <div class="project">
+        <div class="project-name">ASTER</div>
+        <div class="project-description">
+          systems monitor, reason and adaptation
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-name">GREY LANTERN</div>
+        <div class="project-description">
+          digital privacy, cleanup, and watchdog 
+        </div>
+      </div>
+
     </section>
 
     <div class="status">
-      &gt; SESSION ENDED > <span class="cursor"></span>
+      &gt; <span id="random-status"></span> <span class="cursor"></span>
     </div>
 
 <footer>
   <p>
 <div class="notice">
   PERSONAL PROJECT // NON-COMMERCIAL<br>
-  AUTOMATED OUTREACH // NOT REQUESTED
+  AUTOMATED OUTREACH // NOT REQUESTED<br>
+  <br>
+  FIRST SIGNAL // 2026
 </div>
   make <u>contact@starlessterminal.com</u>
   </p>
    </main>
+  
+  <script>
+  const statuses = [
+    "SIGNAL RECEIVED FROM UNKNOWN SOURCE",
+    "NO RESPONSE FROM LAST KNOWN COORDINATE",
+    "PROCESS CONTINUES WITHOUT OPERATOR",
+    "AWAITING INPUT FROM ABSENT USER",
+    "STARFIELD EMPTY / SYSTEM ACTIVE",
+    "CARRIER LOST",
+    "RETURN SIGNAL UNCONFIRMED",
+    "VOID REMAINS UNRESPONSIVE",
+    "ROUTE UNKNOWN",
+    "TRANSMISSION CONTINUES"
+  ];
+
+  const status = statuses[Math.floor(Math.random() * statuses.length)];
+
+  document.getElementById("random-status").textContent = status;
+  </script>
+  
 </body>
 </html>
